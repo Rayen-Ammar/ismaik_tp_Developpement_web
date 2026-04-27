@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Déclaration du type de document HTML5 -->
+<html lang="fr">
+<!-- Début de la section head contenant les métadonnées -->
+<head>
+    <!-- Encodage des caractères en UTF-8 pour supporter les accents -->
+    <meta charset="UTF-8">
+    <!-- Configuration de la vue pour le responsive design sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title>TP 2 : Intégration Bootstrap 5</title>
+
+    <!-- Exercice 1 : Intégration de Bootstrap 5 via CDN -->
+    <!-- Lien vers le fichier CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- Début du corps de la …
+<!-- Déclaration du type de document HTML5 -->
+<html lang="fr">
+<!-- Début de la section head contenant les métadonnées -->
+<head>
+    <!-- Encodage des caractères en UTF-8 pour supporter les accents -->
+    <meta charset="UTF-8">
+    <!-- Configuration de la vue pour le responsive design sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title>TP 2 : Intégration Bootstrap 5</title>
+
+    <!-- EXERCICE 1 : Intégration de Bootstrap 5 via CDN -->
+    <!-- Lien vers le fichier CSS de Bootstrap 5 pour le style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- Début du corps de la page -->
+<body>
+
+    <!-- EXERCICE 2 : Structure de page avec Bootstrap -->
+    <!-- La classe 'container' centre le contenu et ajoute des marges sur les côtés -->
+    <!-- 'py-4' ajoute un espacement vertical (padding top & bottom) -->
+    <div class="container py-4">
+        
+        <!-- En-tête (header) -->
+        <!-- 'bg-primary' : fond bleu | 'text-white' : texte blanc | 'text-center' : centré | 'p-3' : espacement interne -->
+        <header class="bg-primary text-white text-center p-3 mb-3 rounded">
+            <h1>Mon Application Universitaire</h1>
+        </header>
+
+        <!-- Barre de navigation (navbar) -->
+        <!-- 'navbar-dark bg-dark' : thème sombre | 'mb-3' : marge en bas -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Accueil</a>
+                    <a class="nav-link" href="#">Étudiants</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Zone de contenu principal -->
+        <!-- 'bg-light' : fond gris clair | 'border' : ajoute une bordure -->
+        <main class="bg-light p-4 mb-3 border rounded">
+            
+            <!-- EXERCICE 3 : Système de grille (Grid System) -->
+            <!-- 'row' définit une ligne de la grille -->
+            <div class="row">
+                
+                <!-- Contenu principal : occupe 8 colonnes sur 12 sur les écrans moyens (md) et plus -->
+                <div class="col-md-8">
+                    <h2 class="text-secondary">Contenu Principal</h2>
+                    <p>Cette section occupe 8 colonnes de la grille Bootstrap.</p>
+
+                    <!-- EXERCICE 4 : Formulaire avec Bootstrap -->
+                    <div class="card mt-4">
+                        <div class="card-header bg-info text-white">
+                            Ajouter un Étudiant
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <!-- Champ Nom : 'mb-3' pour l'espacement | 'form-label' et 'form-control' pour le style -->
+                                <div class="mb-3">
+                                    <label for="nom" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+                                </div>
+                                <!-- Champ Prénom -->
+                                      <div class="mb-3">
+                                    <label for="nom" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+                                </div>
+                                <!-- Champ Email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="nom@exemple.com">
+                                </div>
+                                <!-- Bouton : 'btn' base du bouton | 'btn-primary' couleur bleue -->
+                                <button type="submit" class="btn btn-primary">Bouton Ajouter</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- EXERCICE 5 : Tableau Bootstrap -->
+                    <div class="mt-5">
+                        <h3 class="text-secondary">Liste des Étudiants</h3>
+                        <!-- 'table' : style de base | 'table-striped' : lignes alternées | 'table-bordered' : bordures -->
+                        <table class="table table-striped table-bordered mt-3">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Prénom</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Lignes d'exemple demandées -->
+                                <tr>
+                                    <td>Ben Ali</td>
+                                    <td>Ahmed</td>
+                                    <td>ahmed.benali@email.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Trabelsi</td>
+                                    <td>Sonia</td>
+                                    <td>sonia.t@email.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Contenu secondaire : occupe 4 colonnes sur 12 (col-md-4) -->
+                <div class="col-md-4">
+                    <div class="p-3 bg-warning text-dark rounded">
+                        <h3>Contenu Secondaire</h3>
+                        <p>Cette section occupe 4 colonnes de la grille.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Information 1</li>
+                            <li class="list-group-item">Information 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pied de page (footer) -->
+        <footer class="bg-dark text-white text-center p-3 rounded">
+            <p>&copy; 2026 - ISMAI Kairouan - TP2 Programmation Web - Ammar Rayen </p>
+        
+        </footer>
+
+    </div>
+
+    <!-- Script Bootstrap JS : Nécessaire pour le fonctionnement des composants interactifs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
