@@ -1,0 +1,166 @@
+/* Importation d'une police moderne depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Réinitialisation des marges et paddings pour une base propre */
+* {
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+    box-sizing: border-box; /* Inclut les bordures et paddings dans la taille totale */
+}
+
+/* Style global du corps de la page */
+body {
+    font-family: 'Inter', sans-serif; /* Utilisation de la police Inter */
+    background-color: #f4f7f6; /* Couleur de fond gris très clair */
+    color: #333; /* Couleur de texte gris foncé pour une meilleure lisibilité */
+    line-height: 1.6; /* Espacement des lignes pour le confort de lecture */
+    padding: 2rem 2rem 0 2rem; /* Marge interne (pas de marge en bas pour le footer) */
+    display: flex; /* Utilisation de Flexbox pour le centrage */
+    flex-direction: column; /* Alignement vertical des éléments */
+    align-items: center; /* Centrage horizontal */
+    min-height: 100vh; /* Hauteur minimale de la page */
+}
+
+/* Conteneur principal pour structurer l'application */
+.container {
+    max-width: 800px; /* Largeur maximale du conteneur */
+    width: 100%; /* Largeur adaptative */
+    background: #fff; /* Fond blanc pour le contenu */
+    padding: 2rem; /* Espacement interne */
+    border-radius: 12px; /* Coins arrondis modernes */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Ombre légère pour l'effet de profondeur */
+    margin-bottom: 3rem; /* Espace avant le footer */
+    flex-grow: 1; /* Permet au conteneur de prendre l'espace disponible */
+}
+
+/* Style des titres de section */
+h1 {
+    text-align: center; /* Centrage du titre principal */
+    margin-bottom: 2rem; /* Marge sous le titre */
+    color: #2c3e50; /* Couleur bleu foncé élégante */
+}
+
+/* Style des sections de l'application */
+.app-section {
+    margin-bottom: 2rem; /* Espacement entre les sections */
+    padding-bottom: 1.5rem; /* Espacement interne bas */
+    border-bottom: 1px solid #eee; /* Ligne de séparation discrète */
+}
+
+/* Style des titres de section */
+h2 {
+    font-size: 1.2rem; /* Taille de police modérée */
+    margin-bottom: 1rem; /* Marge sous le titre */
+    color: #34495e; /* Couleur grise bleutée */
+}
+
+/* Style des champs de saisie (input) */
+input[type="text"] {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 0.8rem; /* Espacement interne confortable */
+    margin-bottom: 1rem; /* Marge sous le champ */
+    border: 1px solid #ddd; /* Bordure grise claire */
+    border-radius: 6px; /* Coins arrondis */
+    font-size: 1rem; /* Taille de texte standard */
+    transition: border-color 0.3s; /* Transition douce pour le focus */
+}
+
+/* Effet au focus sur les inputs */
+input[type="text"]:focus {
+    outline: none; /* Supprime le contour par défaut */
+    border-color: #3498db; /* Change la couleur de bordure en bleu */
+}
+
+/* Style des boutons */
+button {
+    background-color: #3498db; /* Couleur de fond bleue */
+    color: white; /* Texte en blanc */
+    border: none; /* Pas de bordure */
+    padding: 0.8rem 1.5rem; /* Espacement interne */
+    border-radius: 6px; /* Coins arrondis */
+    cursor: pointer; /* Curseur main au survol */
+    font-weight: 600; /* Texte en gras */
+    transition: background-color 0.3s, transform 0.1s; /* Transitions fluides */
+    margin-right: 0.5rem; /* Marge à droite pour l'espacement */
+}
+
+/* Effet au survol des boutons */
+button:hover {
+    background-color: #2980b9; /* Bleu plus foncé au survol */
+}
+
+/* Effet au clic sur les boutons */
+button:active {
+    transform: scale(0.98); /* Légère réduction de taille au clic */
+}
+
+/* Style du paragraphe de résultat */
+#resultat {
+    margin-top: 1rem; /* Marge au-dessus */
+    font-weight: 600; /* Texte en gras */
+    color: #27ae60; /* Couleur verte pour le succès */
+}
+
+/* Style de la liste d'étudiants */
+ul {
+    list-style: none; /* Supprime les puces par défaut */
+    margin-top: 1rem; /* Marge au-dessus */
+}
+
+/* Style des éléments de la liste */
+li {
+    background: #f9f9f9; /* Fond gris très clair */
+    margin-bottom: 0.5rem; /* Espacement entre les éléments */
+    padding: 0.8rem; /* Espacement interne */
+    border-radius: 6px; /* Coins arrondis */
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espace entre le texte et le bouton */
+    align-items: center; /* Alignement vertical */
+    border-left: 4px solid #3498db; /* Bordure décorative à gauche */
+    cursor: pointer; /* Indique que l'élément est cliquable */
+    transition: background 0.2s, transform 0.1s; /* Transition douce pour le survol */
+}
+
+/* Effet au survol d'un élément de la liste */
+li:hover {
+    background: #f0f0f0; /* Fond légèrement plus sombre au survol */
+    transform: translateX(5px); /* Léger décalage pour l'effet interactif */
+}
+
+/* Style de la note informative */
+.info-note {
+    margin-top: 1rem; /* Marge au-dessus */
+    font-size: 0.85rem; /* Taille de texte réduite */
+    color: #7f8c8d; /* Couleur grise pour la discrétion */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Style du pied de page (Footer) professionnel */
+.main-footer {
+    width: 100%; /* Prend toute la largeur */
+    background-color: #2c3e50; /* Couleur de fond bleu foncé élégante */
+    color: #ecf0f1; /* Texte en gris très clair pour le contraste */
+    padding: 2rem 0; /* Espacement interne vertical */
+    margin-top: auto; /* Pousse le footer vers le bas */
+    text-align: center; /* Centrage du texte */
+    border-top: 4px solid #3498db; /* Bordure décorative supérieure */
+}
+
+/* Conteneur interne du footer */
+.footer-content {
+    max-width: 800px; /* Même largeur que le conteneur principal */
+    margin: 0 auto; /* Centrage horizontal */
+    padding: 0 1rem; /* Espacement latéral */
+}
+
+/* Style des paragraphes dans le footer */
+.main-footer p {
+    margin-bottom: 0.5rem; /* Espacement entre les lignes */
+    font-size: 0.9rem; /* Taille de texte légèrement réduite */
+    opacity: 0.9; /* Légère transparence pour un rendu plus doux */
+}
+
+/* Style des textes en gras dans le footer */
+.main-footer strong {
+    color: #3498db; /* Couleur bleue pour mettre en valeur les noms */
+}
