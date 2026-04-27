@@ -1,0 +1,143 @@
+<!-- ========================================
+     PAGE COURS - DEV SCHOOL TN
+     Catalogue complet des formations disponibles
+     ======================================== -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos cours de programmation à Jemmel, Tunisie.">
+    
+    <!-- Titre de la page avec le drapeau tunisien -->
+    <title>🇹🇳 Nos Cours - Dev School TN | Catalogue de Formations</title>
+    
+    <!-- Liens CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========================================
+         BARRE DE NAVIGATION
+         ======================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="me-2">🇹🇳</span>
+                <i class="bi bi-code-slash me-2 fs-4"></i>
+                <span class="fw-bold">Dev School TN</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html"><i class="bi bi-house-door me-1"></i>Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="apropos.html"><i class="bi bi-info-circle me-1"></i>À propos</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="cours.html"><i class="bi bi-book me-1"></i>Nos Cours</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="inscription.html"><i class="bi bi-pencil-square me-1"></i>Inscription</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning btn-sm px-4 rounded-pill" href="inscription.html">
+                            <i class="bi bi-rocket-takeoff me-2"></i>Rejoindre
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="page-header bg-primary text-white py-5" style="margin-top: 76px;">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="badge bg-warning text-dark px-4 py-2 mb-3 rounded-pill">
+                        <i class="bi bi-book me-2"></i>Catalogue 2026
+                    </div>
+                    <h1 class="display-4 fw-bold mb-3">Nos Formations</h1>
+                    <p class="lead">Plus de 50 cours pour devenir développeur professionnel </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CATALOGUE DE COURS
+         ======================================== -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Cours 1: HTML & CSS -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper bg-primary-gradient text-white d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="bi bi-filetype-html display-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">HTML & CSS - Les Bases</h5>
+                            <p class="text-muted small">Apprenez à créer des pages web modernes et responsive.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="h5 fw-bold text-primary mb-0">149 TND</span>
+                                <a href="inscription.html" class="btn btn-primary rounded-pill px-4">S'inscrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cours 2: JavaScript -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper bg-warning-gradient text-white d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="bi bi-filetype-js display-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">JavaScript Moderne</h5>
+                            <p class="text-muted small">Maîtrisez JavaScript pour créer des applications interactives.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="h5 fw-bold text-primary mb-0">199 TND</span>
+                                <a href="inscription.html" class="btn btn-primary rounded-pill px-4">S'inscrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cours 3: Python -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper bg-success-gradient text-white d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="bi bi-filetype-py display-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Python & Data Science</h5>
+                            <p class="text-muted small">Apprenez le langage le plus populaire pour l'IA et la Data.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="h5 fw-bold text-primary mb-0">249 TND</span>
+                                <a href="inscription.html" class="btn btn-primary rounded-pill px-4">S'inscrire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Dev School TN. Fait avec ❤️ en Tunisie 🇹🇳</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

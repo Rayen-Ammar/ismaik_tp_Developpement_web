@@ -1,0 +1,136 @@
+<!-- ========================================
+     PAGE INSCRIPTION - DEV SCHOOL TN
+     Formulaire d'inscription pour les nouveaux étudiants
+     ======================================== -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre de la page avec le drapeau tunisien -->
+    <title>🇹🇳 Inscription - Dev School TN</title>
+    
+    <!-- Liens CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========================================
+         BARRE DE NAVIGATION
+         ======================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="me-2">🇹🇳</span>
+                <i class="bi bi-code-slash me-2 fs-4"></i>
+                <span class="fw-bold">Dev School TN</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html"><i class="bi bi-house-door me-1"></i>Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="apropos.html"><i class="bi bi-info-circle me-1"></i>À propos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="cours.html"><i class="bi bi-book me-1"></i>Nos Cours</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="inscription.html"><i class="bi bi-pencil-square me-1"></i>Inscription</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="page-header bg-primary text-white py-5" style="margin-top: 76px;">
+        <div class="container py-5 text-center">
+            <h1 class="display-4 fw-bold mb-3">Inscription</h1>
+            <p class="lead">Commencez votre parcours de développeur dès aujourd'hui ! </p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FORMULAIRE D'INSCRIPTION
+         ======================================== -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg p-5">
+                        <h3 class="fw-bold mb-4 text-center">Formulaire d'Inscription</h3>
+                        <form id="inscriptionForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Prénom *</label>
+                                    <input type="text" class="form-control" placeholder="Mohamed" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Nom *</label>
+                                    <input type="text" class="form-control" placeholder="Ben Ali" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Email *</label>
+                                    <input type="email" class="form-control" placeholder="votre.email@exemple.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Téléphone *</label>
+                                    <input type="tel" class="form-control" placeholder="+216 53 112 832" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold">Cours souhaité *</label>
+                                    <select class="form-select" required>
+                                        <option value="" selected disabled>Sélectionnez un cours...</option>
+                                        <option>HTML & CSS</option>
+                                        <option>JavaScript Moderne</option>
+                                        <option>Python & Data Science</option>
+                                        <option>Full Stack Developer</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill">
+                                        <i class="bi bi-rocket-takeoff me-2"></i>Soumettre mon inscription
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Message de succès caché par défaut -->
+                        <div id="successMessage" class="alert alert-success mt-4 d-none">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            Merci ! Votre inscription a été reçue avec succès. Nous vous contacterons bientôt. 🇹🇳
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="bg-dark text-white py-5 text-center">
+        <p class="mb-0">&copy; 2026 Dev School TN. Fait avec ❤️ en Tunisie 🇹🇳</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Gestion de la soumission du formulaire
+        document.getElementById('inscriptionForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+            
+            // Affiche le message de succès
+            document.getElementById('successMessage').classList.remove('d-none');
+            
+            // Réinitialise le formulaire
+            this.reset();
+            
+            // Scroll vers le message de succès
+            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+</body>
+</html>
